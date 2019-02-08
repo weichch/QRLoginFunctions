@@ -12,11 +12,11 @@ using QRCoder;
 
 namespace QRLoginFunctions
 {
-    public static class GetQrCodeFunction
+    public static class GetKeyFunction
     {
-        [FunctionName("GetQrCode")]
+        [FunctionName("GetKey")]
         public static async Task<HttpResponseMessage> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "code")]
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "key/new")]
             HttpRequestMessage req,
             TraceWriter log)
         {
