@@ -21,6 +21,9 @@
                     'http://192.168.1.109/api/myrymanbff/portal/code',
                     function(data) {
                         console.log(data);
+                    }).fail(
+                    function() {
+                        alert(1);
                     });
             });
 
